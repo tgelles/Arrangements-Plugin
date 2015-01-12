@@ -58,7 +58,7 @@ function register_arrangement_posttype() {
 
 		//$taxonomies = array( 'exhibition_type' );
 		
-		$supports = array('title','revisions','thumbnail' );
+		$supports = array('title','editor','revisions','thumbnail' );
 
 		$post_type_args = array(
 			'labels' 			=> $labels,
@@ -89,7 +89,7 @@ $arrangementinformation_5_metabox = array(
 	'fields' => array(
 
 		array(
-			'title' 		=> 'Title',
+			'title' 		=> 'Arrangement Title',
 			'desc' 			=> '',
 			'id' 				=> 'ecpt_arrangement_title',
 			'class' 			=> 'ecpt_arrangement_title',
@@ -149,7 +149,17 @@ $arrangementinformation_5_metabox = array(
 			'id' 				=> 'ecpt_description',
 			'class' 			=> 'ecpt_description',
 			'type' 			=> 'textarea',
-			'rich_editor' 	=> 0,			
+			'rich_editor' 	=> 1,			
+			'max' 			=> 0,
+			'std'			=> ''		
+			),
+		array(
+			'name' 			=> 'Purchase',
+			'desc' 			=> '',
+			'id' 				=> 'ecpt_purchase',
+			'class' 			=> 'ecpt_purchase',
+			'type' 			=> 'textarea',
+			'rich_editor' 	=> 1,			
 			'max' 			=> 0,
 			'std'			=> ''		
 			),
